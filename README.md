@@ -55,7 +55,7 @@ We welcome contributions to make this project even better! If you have ideas or 
 
 ## 📧 Contact
 
-If you have any questions or feedback, please reach out to us at [email@example.com](mailto:email@example.com).
+If you have any questions or feedback, please reach out to us at [gnchakan1@gmail.com](mailto:gnchakan1@gmail.com).
 
 ## 📜 License
 

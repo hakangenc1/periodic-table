@@ -1,0 +1,31 @@
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.5);
+    z-index: 999;
+    background-color: #0f172a;
+    transition: transform 0.1s ease-in-out;
+  }
+}
+
+.element__number {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 9px;
+}
+
+.element__name {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  font-size: 9px;
+}

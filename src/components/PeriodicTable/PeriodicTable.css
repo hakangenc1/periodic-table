@@ -1,0 +1,54 @@
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, 68px);
+  grid-template-rows: repeat(10, 68px);
+  gap: 2px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.selected-element {
+  grid-column: 3 / 13; /* Spans across columns 2 to 16 */
+  grid-row: 2 / 4; /* Sits in the first row */
+  padding: 10px;
+  position: relative;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #0f172a; /* Match the background color */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #f1f5f9; /* Slightly darker tone */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #0f172a; /* Optional: adds a border to the thumb */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #334155; /* Darker tone on hover */
+  }
+}
+
+.close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  padding: 2px;
+  background-color: #020617;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #1e293b;
+  }
+}
